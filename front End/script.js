@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             console.log('User data retrieved successfully:', data);
         } else {
             const errorData = await response.json();
-            console.error('Error retrieving user data:', errorData);
+            console.error('Error retrieving user data:', errorData)
             if (!window.location.href.includes('login.html')) {
                 window.location.href = "/login/login.html";
             }
