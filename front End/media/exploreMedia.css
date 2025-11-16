@@ -1,0 +1,9 @@
+@media (max-width: 480px) {
+    .follow-left {
+        max-width: 65%;
+    }
+
+    .follow-desc {
+        white-space: normal;
+    }
+}
