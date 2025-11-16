@@ -1,3 +1,352 @@
-.paddingTop{
-    padding-top: 1rem;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+ img {
+     display: block;
+     max-width: 100%;
+     height: auto;
+ }
+
+ button {
+     cursor: pointer;
+     border: none;
+     background: none;
+     padding: 0;
+     font-family: inherit;
+ }
+
+ /* Search bar and settings */
+ .search-settings {
+
+     display: flex;
+     align-items: center;
+     gap: 2rem;
+     margin: 0 1rem 1rem;
+ }
+
+ .search-box {
+     margin-top: 0.5rem;
+
+     flex-grow: 1;
+     display: flex;
+     align-items: center;
+     background: #000;
+     border: 1px solid #3f3f3f;
+     border-radius: 9999px;
+     padding: 8px 12px;
+     height: 2.8rem;
+ }
+
+ .search-box i {
+     color: #9ca3af;
+     font-size: 14px;
+ }
+
+ .search-box input {
+     background: transparent;
+     border: none;
+     outline: none;
+     color: #fff;
+     font-size: 14px;
+     margin-left: 8px;
+     width: 100%;
+ }
+
+ .trendingSec {
+     padding: 0rem 1rem 0rem;
+     border-bottom: 1px solid #2f3336;
+ }
+
+ .treandingTop{
+    padding: 0rem 1rem 0rem;
+
+ }
+
+ .settings-btn {
+     color: #9ca3af;
+     font-size: 18px;
+     transition: color 0.2s ease;
+ }
+
+ .settings-btn:hover {
+     color: #fff;
+ }
+ .expNavbar{
+    position: sticky;
+    top: 0;
+    background-color: #000;
+ }
+
+ /* Navigation tabs */
+ .nav-tabs {
+     display: flex;
+     justify-content: space-between;
+     padding: 0 2rem;
+     gap: 16px;
+     border-bottom: 1px solid #222;
+     margin-bottom: 16px;
+     font-weight: 600;
+     font-size: 12px;
+ }
+
+ .nav-tabs button {
+     color: #6b7280;
+     padding-bottom: 6px;
+     background: none;
+     border-bottom: 2px solid transparent;
+     transition: all 0.2s ease;
+ }
+
+ .nav-tabs button.active {
+     color: #3b82f6;
+     border-bottom-color: #3b82f6;
+ }
+
+ .nav-tabs button:hover:not(.active) {
+     color: #fff;
+ }
+
+ /* Section headings */
+ h2.section-title {
+     font-weight: 700;
+     font-size: 1.25rem;
+     margin-bottom: 2rem;
+ }
+
+ /* Today's News */
+ .news-item {
+     margin-bottom: 16px;
+ }
+
+ .news-title {
+     font-weight: bold;
+     font-size: 17px;
+     margin: 0 0 6px 0;
+     cursor: pointer;
+     line-height: 1.2;
+     color: #fff;
+     transition: text-decoration 0.2s ease;
+ }
+
+ .news-title:hover {
+     text-decoration: underline;
+ }
+
+ .news-meta {
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     font-size: 12px;
+     color: #9ca3af;
+ }
+
+ .news-meta img {
+     width: 20px;
+     height: 20px;
+     border-radius: 9999px;
+     object-fit: cover;
+ }
+
+ /* Trending section */
+ 
+ .trending-item {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     margin-bottom: 0rem;
+     font-size: 12px;
+     color: #9ca3af;
+ }
+
+ .trending-info {
+     max-width: calc(100% - 24px);
+ }
+
+ .trending-category {
+     text-transform: uppercase;
+     font-weight: 600;
+     margin: 0 0 4px 0;
+     color: #6b7280;
+     line-height: 1.2;
+ }
+
+ .trending-hashtag {
+     font-weight: 700;
+     color: #fff;
+     margin: 0 0 2px 0;
+     cursor: pointer;
+     line-height: 1.2;
+ }
+
+ .trending-hashtag:hover {
+     text-decoration: underline;
+ }
+
+ .trending-posts {
+     margin: 0;
+     color: #9ca3af;
+     line-height: 1.2;
+ }
+
+ .trending-more-btn {
+     color: #9ca3af;
+     font-size: 14px;
+     background: none;
+     border: none;
+     cursor: pointer;
+     padding: 0;
+     margin-left: 8px;
+     transition: color 0.2s ease;
+ }
+
+ .trending-more-btn:hover {
+     color: #fff;
+ }
+
+ /* Who to follow */
+ .follow-list {
+     margin-bottom: 16px;
+ }
+
+ .follow-item {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 16px;
+ }
+
+ .follow-left {
+     display: flex;
+     align-items: center;
+     gap: 12px;
+     max-width: calc(100% - 80px);
+ }
+
+ .follow-avatar {
+     width: 40px;
+     height: 40px;
+     border-radius: 9999px;
+     object-fit: cover;
+     flex-shrink: 0;
+ }
+
+ .follow-info {
+     font-size: 12px;
+     color: #9ca3af;
+     overflow: hidden;
+ }
+
+ .follow-name {
+     font-weight: 600;
+     color: #fff;
+     display: flex;
+     align-items: center;
+     gap: 4px;
+     margin: 0 0 2px 0;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+
+ .follow-name i {
+     color: #3b82f6;
+     font-size: 14px;
+     flex-shrink: 0;
+ }
+
+ .follow-handle {
+     margin: 0 0 4px 0;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+
+ .follow-desc {
+     margin: 0;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+
+ .follow-btn {
+     background-color: #fff;
+     color: #000;
+     font-weight: 600;
+     font-size: 12px;
+     padding: 6px 16px;
+     border-radius: 9999px;
+     transition: background-color 0.2s ease;
+     flex-shrink: 0;
+     white-space: nowrap;
+ }
+
+ .follow-btn:hover {
+     background-color: #e5e7eb;
+ }
+
+ .show-more-btn {
+     font-size: 12px;
+     color: #3b82f6;
+     background: none;
+     border: none;
+     cursor: pointer;
+     padding: 0;
+     margin-top: 8px;
+     transition: text-decoration 0.2s ease;
+ }
+
+ .show-more-btn:hover {
+     text-decoration: underline;
+ }
+
+ /* Business news snippet */
+ .business-news {
+     font-size: 12px;
+     color: #9ca3af;
+ }
+
+ .business-header {
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     margin-bottom: 4px;
+ }
+
+ .business-logo {
+     width: 20px;
+     height: 20px;
+     border-radius: 2px;
+     object-fit: cover;
+     flex-shrink: 0;
+ }
+
+ .business-name {
+     font-weight: 600;
+     color: #fff;
+     margin: 0;
+     display: flex;
+     align-items: center;
+     gap: 6px;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+
+ .business-handle-time {
+     font-weight: 400;
+     font-size: 10px;
+     color: #6b7280;
+     white-space: nowrap;
+ }
+
+ .business-text {
+     margin: 0;
+     overflow: hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+ }
+
+
+ .mainCOl {
+     border-left: 1px solid #2f3336;
+     border-right: 1px solid #2f3336;
+ }
